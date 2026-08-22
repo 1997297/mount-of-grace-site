@@ -23,3 +23,11 @@ document.addEventListener("DOMContentLoaded", () => {
 
   revealEls.forEach(el => observer.observe(el));
 });
+
+const hamburgerBtn = document.getElementById("hamburgerbtn");
+const mainNav = document.getElementById("main-nav");
+
+hamburgerBtn.addEventListener("click", () => {
+    mainNav.classList.toggle("open");
+    hamburgerBtn.classList.toggle("active");
+});
