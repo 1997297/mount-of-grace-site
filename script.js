@@ -24,8 +24,8 @@ document.addEventListener("DOMContentLoaded", () => {
   revealEls.forEach(el => observer.observe(el));
 });
 
-const hamburgerBtn = document.getElementById("hamburgerbtn");
-const mainNav = document.getElementById("main-nav");
+const hamburgerBtn = document.getElementById("hamburgerBtn");
+const mainNav = document.getElementById("mainNav");
 
 hamburgerBtn.addEventListener("click", () => {
     mainNav.classList.toggle("open");
