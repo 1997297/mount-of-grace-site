@@ -667,6 +667,7 @@ a:focus-visible, button:focus-visible {
   .mobile-donate {
     display: inline-flex;
     margin-left: 0px;
-    margin-top: 8px
+    margin-top: 8px;
+    color: #ffff;
   }
 }
