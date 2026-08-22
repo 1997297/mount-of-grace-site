@@ -144,7 +144,10 @@ h1, h2, h3 { font-family: var(--font-display); color: var(--text-dark); font-wei
   border-radius: 2px;
   transition: all 0.3s ease, opacity 0.3s ease;
 }
-.mobile-donate { display: none; }
+.mobile-donate {
+  display: none;
+  color: #ffffff
+}
 
 /* ===== HEADER ===== */
 .site-header {
