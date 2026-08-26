@@ -100,6 +100,7 @@ h1, h2, h3 { font-family: var(--font-display); color: var(--text-dark); font-wei
   transition: all .2s ease;
   border: 1.5px solid transparent;
   cursor: pointer;
+  flex: 0 0 auto;
 }
 .btn-sm { padding: 10px 22px; font-size: 14px; }
 
@@ -623,7 +624,8 @@ h1, h2, h3 { font-family: var(--font-display); color: var(--text-dark); font-wei
 
 @media (max-width: 560px) {
   .container { padding: 0 20px; }
-  .hero-actions, .cta-actions { flex-direction: column; }
+  .hero-actions { flex-wrap: wrap; gap: 10px; }
+  .cta-actions { flex-direction: column; }
   .footer-grid { grid-template-columns: 1fr; }
   .floating-card { left: 0; right: 0; margin: 0 16px; bottom: -20px; }
 }
