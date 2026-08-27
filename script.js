@@ -31,3 +31,33 @@ hamburgerBtn.addEventListener("click", () => {
     mainNav.classList.toggle("open");
     hamburgerBtn.classList.toggle("active");
 });
+
+document.querySelectorAll('.video-card').forEach(card => {
+  const video = card.querySelector('.program-video-el');
+  const btn = card.querySelector('.play-btn');
+
+  btn.addEventListener('click', () => {
+    if (video.paused) {
+      video.play();
+      btn.textContent = '⏸';
+    } else {
+      video.pause();
+      btn.textContent = '▶';
+    }
+  });
+});
+
+const videoEls = document.querySelectorAll('.program-video-el');
+
+const videoObserver = new IntersectionObserver((entries) => {
+  entries.forEach(entry => {
+    const video = entry.target;
+    if (entry.isIntersecting) {
+      video.play();
+    } else {
+      video.pause();
+    }
+  });
+}, { threshold: 0.5 });
+
+videoEls.forEach(video => videoObserver.observe(video));
