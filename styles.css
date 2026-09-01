@@ -111,9 +111,10 @@ h1, h2, h3 { font-family: var(--font-display); color: var(--text-dark); font-wei
 .btn-primary:hover { background: #204d39; }
 
 .btn-outline {
-  background: transparent;
+  background: white;
   border-color: var(--green-700);
   color: var(--green-700);
+  border: 1px solid var(--green-700);
 }
 .btn-outline:hover { background: var(--green-700); color: var(--white); }
 
@@ -546,20 +547,21 @@ h1, h2, h3 { font-family: var(--font-display); color: var(--text-dark); font-wei
 .testimonial-card {
   background: var(--white);
   border: 1px solid rgba(0,0,0,0.06);
-  border-radius: 14px;
+  border-radius: 20px;
   padding: 30px 28px;
   position: relative;
 }
 .quote-mark {
   font-family: var(--font-display);
   font-size: 40px;
-  color: var(--green-600);
+  color: #b7e4c7;
   line-height: 1;
   display: block;
   margin-bottom: 8px;
 }
 .testimonial-card p {
   font-size: 14.5px;
+  font-style: italic;
   color: var(--text-body);
   margin-bottom: 22px;
 }
@@ -572,7 +574,7 @@ h1, h2, h3 { font-family: var(--font-display); color: var(--text-dark); font-wei
   background: #ddd;
 }
 .author-name { font-weight: 700; font-size: 14px; color: var(--text-dark); }
-.author-loc { font-size: 12.5px; color: var(--green-600); }
+.author-loc { font-size: 12.5px; color: #74c69d; }
 
 /* ===== CTA BAND ===== */
 .cta-band {
@@ -585,6 +587,11 @@ h1, h2, h3 { font-family: var(--font-display); color: var(--text-dark); font-wei
   font-size: clamp(30px, 4vw, 50px);
   font-weight: 600;
   margin-bottom: 20px;
+}
+.section-title em {
+  font-style: italic;
+  color: var(--green-600);
+  font-weight: 300;
 }
 .cta-inner p {
  font-size: 17px;
@@ -599,7 +606,7 @@ justify-content: center; gap: 14px;
 .site-footer {
   background: var(--green-900);
   padding: 80px 0 0;
-  color: rgba(255,255,255,0.65);
+  color: #52b788;
 }
 .footer-grid {
   display: grid;
@@ -610,25 +617,31 @@ justify-content: center; gap: 14px;
 }
 .footer-brand p { font-size: 14px; margin: 18px 0 20px; max-width: 280px; }
 .footer-brand .logo { margin-bottom: 4px; }
+.footer-brand .logo-img {
+  width: 32px;
+  height: 32px;
+}
 
 .social-icons { display: flex; gap: 10px; }
 .social-icons a {
   width: 34px;
   height: 34px;
-  border-radius: 50%;
-  border: 1px solid rgba(255,255,255,0.2);
+  border-radius: 8px;
+  border: none;
+  background: #53b7881f;
   display: flex;
   align-items: center;
   justify-content: center;
-  font-size: 13px;
-  color: var(--white);
+  color: #52b788;
   transition: background .2s;
 }
-.social-icons a:hover { background: rgba(255,255,255,0.12); }
+.social-icons a:hover {
+  background: #234e37;
+}
 
 .footer-col h4 {
   font-family: var(--font-body);
-  color: var(--white);
+  color: #d8f3dc;
   font-size: 14px;
   font-weight: 700;
   margin-bottom: 18px;
@@ -636,7 +649,7 @@ justify-content: center; gap: 14px;
 .footer-col a, .footer-col p {
   display: block;
   font-size: 14px;
-  color: rgba(255,255,255,0.6);
+  color: #52b788;
   margin-bottom: 12px;
 }
 .footer-col a:hover { color: var(--green-mint); }
@@ -649,7 +662,7 @@ justify-content: center; gap: 14px;
   font-size: 12.5px;
 }
 .footer-legal { display: flex; gap: 24px; }
-.footer-legal a { color: rgba(255,255,255,0.5); }
+.footer-legal a { color: #52b788; }
 .footer-legal a:hover { color: var(--white); }
 
 /* ===== RESPONSIVE ===== */
@@ -669,6 +682,10 @@ justify-content: center; gap: 14px;
   .container { padding: 0 20px; }
   .hero-actions { flex-wrap: wrap; gap: 10px; }
   .cta-actions { flex-direction: row; gap: 10px; }
+  .cta-buttons .btn {
+    width: 50%;
+    max-width: none;
+  }
   .footer-grid { grid-template-columns: 1fr; }
   .floating-card { left: 0; right: 0; margin: 0 16px; bottom: -20px; }
 }
