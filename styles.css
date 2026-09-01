@@ -577,13 +577,23 @@ h1, h2, h3 { font-family: var(--font-display); color: var(--text-dark); font-wei
 /* ===== CTA BAND ===== */
 .cta-band {
   background: var(--green-mint-light);
-  padding: 110px 0;
+  padding: 96px 24px;
   text-align: center;
 }
 .cta-inner { max-width: 640px; margin: 0 auto; }
-.cta-inner .section-title { margin-bottom: 22px; }
-.cta-inner p { font-size: 16px; margin-bottom: 36px; }
-.cta-actions { display: flex; justify-content: center; gap: 14px; }
+.cta-inner .section-title { 
+  font-size: clamp(30px, 4vw, 50px);
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+.cta-inner p {
+ font-size: 17px;
+ font-weight: 300;
+ margin-bottom: 30px; }
+.cta-actions {
+display: flex;
+justify-content: center; gap: 14px;
+}
 
 /* ===== FOOTER ===== */
 .site-footer {
@@ -658,7 +668,7 @@ h1, h2, h3 { font-family: var(--font-display); color: var(--text-dark); font-wei
 @media (max-width: 560px) {
   .container { padding: 0 20px; }
   .hero-actions { flex-wrap: wrap; gap: 10px; }
-  .cta-actions { flex-direction: column; }
+  .cta-actions { flex-direction: row; gap: 10px; }
   .footer-grid { grid-template-columns: 1fr; }
   .floating-card { left: 0; right: 0; margin: 0 16px; bottom: -20px; }
 }
