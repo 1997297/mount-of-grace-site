@@ -1,0 +1,436 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<link rel="icon" type="image/png" href="assets/favicon.png">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Programs - Mount of Grace Foundation</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,400;0,9..144,500;0,9..144,600;0,9..144,700;1,9..144,300;1,9..144,400;1,9..144,500;1,9..144,600&family=Outfit:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    
+<!-- HEADER -->
+<header class="site-header">
+  <div class="container header-inner">
+    <a href="index.html" class="logo">
+      <img src="assets/mog-logo.png" alt="Mount of Grace Foundation" class="logo-img">
+      <span class="logo-text">
+        Mount of Grace
+        <small>FOUNDATION</small>
+      </span>
+    </a>
+    <nav class="main-nav" id="mainNav">
+      <a href="index.html" class="nav-link">Home</a>
+      <a href="about.html" class="nav-link">About</a>
+      <a href="programs.html" class="nav-link">Programs</a>
+      <a href="impact.html" class="nav-link">Impact</a>
+      <a href="involved.html" class="nav-link">Get Involved</a>
+      <a href="contact.html" class="nav-link">Contact</a>
+      <a href="donate.html" class="btn btn-primary btn-sm mobile-donate">Donate</a>
+    </nav>
+    <a href="donate.html" class="btn btn-primary btn-sm desktop-donate">Donate</a>
+    <button class="hamburger" id="hamburgerBtn" aria-label="Toggle navigation menu">
+      <span class="hamburger-line"></span>
+      <span class="hamburger-line"></span>
+      <span class="hamburger-line"></span>
+    </button>
+  </div>
+</header>
+
+
+
+<div class="mog-programs">
+
+  <!-- ============ HERO ============ -->
+  <section class="mog-hero">
+    <div class="mog-hero-inner reveal">
+      <p class="eyebrow" style="justify-content:center;">WHAT WE DO</p>
+      <h1>Six programs.<em>One purpose.</em></h1>
+      <p>
+        Each program is designed to address a root cause of inequality — not just a symptom.
+        Together they form a comprehensive approach to human flourishing.
+      </p>
+    </div>
+  </section>
+
+  <!-- ============ PROGRAM CARDS ============ -->
+  <section class="mog-programs-section">
+    <div class="mog-grid reveal">
+
+      <!-- Education & Youth -->
+      <div class="mog-card-wrap">
+        <article class="mog-card">
+          <div class="mog-card-media">
+            <img src="https://images.unsplash.com/photo-1509062522246-3755977927d7?q=80&w=800&auto=format&fit=crop" alt="Education and Youth program">
+            <div class="mog-card-label">
+              <span class="mog-card-icon mog-icon-education">📚</span>
+              <h3>Education & Youth</h3>
+            </div>
+          </div>
+          <div class="mog-card-body">
+            <p class="mog-card-kicker">Every child deserves a future.</p>
+            <p class="mog-desc">
+              We believe education is the most powerful lever for generational change. Our education
+              programs provide scholarships, learning materials, tutoring, and mentorship for students
+              from primary school through university.
+            </p>
+            <button type="button" class="mog-see-impact" onclick="mogToggleImpact('panel-education', this)">See impact ↓</button>
+          </div>
+        </article>
+
+        <div class="mog-impact-panel" id="panel-education" hidden>
+          <div class="mog-impact-topline"></div>
+          <div class="mog-impact-content">
+            <div class="mog-impact-stats">
+              <p class="mog-impact-heading">Impact So Far</p>
+              <ul class="mog-impact-list">
+                <li>2,400+ scholarships awarded</li>
+                <li>18 partner schools across 4 states</li>
+                <li>94% scholarship retention rate</li>
+                <li>Career mentorship for 600+ youth</li>
+              </ul>
+            </div>
+            <div class="mog-impact-serve">
+              <p class="mog-impact-heading">Who We Serve</p>
+              <p>Children aged 5–22 from low-income households in Imo, Anambra, Kogi, and Delta states.</p>
+            </div>
+          </div>
+          <button type="button" class="mog-support-btn">Support This Program</button>
+        </div>
+      </div>
+
+      <!-- Healthcare Access -->
+      <div class="mog-card-wrap">
+        <article class="mog-card">
+          <div class="mog-card-media">
+            <img src="https://images.unsplash.com/photo-1531983412531-1f49a365ffed?q=80&w=800&auto=format&fit=crop" alt="Healthcare Access program">
+            <div class="mog-card-label">
+              <span class="mog-card-icon mog-icon-health">🏥</span>
+              <h3>Healthcare Access</h3>
+            </div>
+          </div>
+          <div class="mog-card-body">
+            <p class="mog-card-kicker">Dignity in every moment of care.</p>
+            <p class="mog-desc">
+              We run quarterly free medical clinics in underserved communities, provide maternal and
+              child health support, distribute essential medicines, and train community health workers
+              to extend reach between visits.
+            </p>
+            <button type="button" class="mog-see-impact" onclick="mogToggleImpact('panel-healthcare', this)">See impact ↓</button>
+          </div>
+        </article>
+
+        <div class="mog-impact-panel" id="panel-healthcare" hidden>
+          <div class="mog-impact-topline"></div>
+          <div class="mog-impact-content">
+            <div class="mog-impact-stats">
+              <p class="mog-impact-heading">Impact So Far</p>
+              <ul class="mog-impact-list">
+                <li>9,100+ patients treated</li>
+                <li>24 free medical camps held</li>
+                <li>350+ births supported safely</li>
+                <li>80 community health workers trained</li>
+              </ul>
+            </div>
+            <div class="mog-impact-serve">
+              <p class="mog-impact-heading">Who We Serve</p>
+              <p>Families in rural and peri-urban communities with limited access to formal healthcare facilities.</p>
+            </div>
+          </div>
+          <button type="button" class="mog-support-btn">Support This Program</button>
+        </div>
+      </div>
+
+      <!-- Women's Empowerment -->
+      <div class="mog-card-wrap">
+        <article class="mog-card">
+          <div class="mog-card-media">
+            <img src="https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?q=80&w=800&auto=format&fit=crop" alt="Women's Empowerment program">
+            <div class="mog-card-label">
+              <span class="mog-card-icon mog-icon-women">🌸</span>
+              <h3>Women's Empowerment</h3>
+            </div>
+          </div>
+          <div class="mog-card-body">
+            <p class="mog-card-kicker">When women rise, communities rise.</p>
+            <p class="mog-desc">
+              Our women's programs offer vocational training, microfinance, savings cooperatives, and
+              leadership development. We also run survivor support and legal aid services for women
+              facing gender-based violence.
+            </p>
+            <button type="button" class="mog-see-impact" onclick="mogToggleImpact('panel-women', this)">See impact ↓</button>
+          </div>
+        </article>
+
+        <div class="mog-impact-panel" id="panel-women" hidden>
+          <div class="mog-impact-topline"></div>
+          <div class="mog-impact-content">
+            <div class="mog-impact-stats">
+              <p class="mog-impact-heading">Impact So Far</p>
+              <ul class="mog-impact-list">
+                <li>1,200+ women trained</li>
+                <li>340+ businesses started</li>
+                <li>$180,000 in microloans disbursed</li>
+                <li>60% business survival rate at 2 years</li>
+              </ul>
+            </div>
+            <div class="mog-impact-serve">
+              <p class="mog-impact-heading">Who We Serve</p>
+              <p>Women aged 18–55, with priority for survivors of violence, widows, and single mothers.</p>
+            </div>
+          </div>
+          <button type="button" class="mog-support-btn">Support This Program</button>
+        </div>
+      </div>
+
+      <!-- Community Development -->
+      <div class="mog-card-wrap">
+        <article class="mog-card">
+          <div class="mog-card-media">
+            <img src="https://images.unsplash.com/photo-1594708767771-a7502209ff51?q=80&w=800&auto=format&fit=crop" alt="Community Development program">
+            <div class="mog-card-label">
+              <span class="mog-card-icon mog-icon-community">🏗️</span>
+              <h3>Community Development</h3>
+            </div>
+          </div>
+          <div class="mog-card-body">
+            <p class="mog-card-kicker">Infrastructure built to last.</p>
+            <p class="mog-desc">
+              We fund and build essential community infrastructure: clean water boreholes, classroom
+              blocks, community halls, and sanitation facilities — always in partnership with local
+              community councils.
+            </p>
+            <button type="button" class="mog-see-impact" onclick="mogToggleImpact('panel-community', this)">See impact ↓</button>
+          </div>
+        </article>
+
+        <div class="mog-impact-panel" id="panel-community" hidden>
+          <div class="mog-impact-topline"></div>
+          <div class="mog-impact-content">
+            <div class="mog-impact-stats">
+              <p class="mog-impact-heading">Impact So Far</p>
+              <ul class="mog-impact-list">
+                <li>12 boreholes installed</li>
+                <li>8 classroom blocks constructed</li>
+                <li>6 community centers built</li>
+                <li>30,000+ people with improved water access</li>
+              </ul>
+            </div>
+            <div class="mog-impact-serve">
+              <p class="mog-impact-heading">Who We Serve</p>
+              <p>Entire communities, prioritized by infrastructure gaps and local leadership engagement.</p>
+            </div>
+          </div>
+          <button type="button" class="mog-support-btn">Support This Program</button>
+        </div>
+      </div>
+
+      <!-- Diaspora Giving -->
+      <div class="mog-card-wrap">
+        <article class="mog-card">
+          <div class="mog-card-media">
+            <img src="https://images.unsplash.com/photo-1529107386315-e1a2ed48a620?q=80&w=800&auto=format&fit=crop" alt="Diaspora Giving program">
+            <div class="mog-card-label">
+              <span class="mog-card-icon mog-icon-diaspora">🌐</span>
+              <h3>Diaspora Giving</h3>
+            </div>
+          </div>
+          <div class="mog-card-body">
+            <p class="mog-card-kicker">Connecting home, wherever you are.</p>
+            <p class="mog-desc">
+              We help Nigerian Americans channel their resources and skills back home through structured
+              giving, remittance advisory, hometown association partnerships, and professional volunteer
+              programs.
+            </p>
+            <button type="button" class="mog-see-impact" onclick="mogToggleImpact('panel-diaspora', this)">See impact ↓</button>
+          </div>
+        </article>
+
+        <div class="mog-impact-panel" id="panel-diaspora" hidden>
+          <div class="mog-impact-topline"></div>
+          <div class="mog-impact-content">
+            <div class="mog-impact-stats">
+              <p class="mog-impact-heading">Impact So Far</p>
+              <ul class="mog-impact-list">
+                <li>2,800+ diaspora donors engaged</li>
+                <li>$1.4M raised from diaspora</li>
+                <li>45 hometown associations partnered</li>
+                <li>120 professional volunteers placed</li>
+              </ul>
+            </div>
+            <div class="mog-impact-serve">
+              <p class="mog-impact-heading">Who We Serve</p>
+              <p>Nigerian diaspora individuals, families, professionals, and hometown associations.</p>
+            </div>
+          </div>
+          <button type="button" class="mog-support-btn">Support This Program</button>
+        </div>
+      </div>
+
+      <!-- Emergency Relief -->
+      <div class="mog-card-wrap">
+        <article class="mog-card">
+          <div class="mog-card-media">
+            <img src="https://images.unsplash.com/photo-1591189863430-ab87e120f312?q=80&w=800&auto=format&fit=crop" alt="Emergency Relief program">
+            <div class="mog-card-label">
+              <span class="mog-card-icon mog-icon-emergency">🆘</span>
+              <h3>Emergency Relief</h3>
+            </div>
+          </div>
+          <div class="mog-card-body">
+            <p class="mog-card-kicker">Present when communities need it most.</p>
+            <p class="mog-desc">
+              When floods, droughts, or crises strike, we mobilize rapidly to deliver food, clean water,
+              shelter materials, and trauma support. We partner with state emergency management agencies
+              for coordinated response.
+            </p>
+            <button type="button" class="mog-see-impact" onclick="mogToggleImpact('panel-emergency', this)">See impact ↓</button>
+          </div>
+        </article>
+
+        <div class="mog-impact-panel" id="panel-emergency" hidden>
+          <div class="mog-impact-topline"></div>
+          <div class="mog-impact-content">
+            <div class="mog-impact-stats">
+              <p class="mog-impact-heading">Impact So Far</p>
+              <ul class="mog-impact-list">
+                <li>4 major emergency responses</li>
+                <li>5,000+ people reached in emergencies</li>
+                <li>18 tonnes of relief supplies distributed</li>
+                <li>3 states covered in last 2 years</li>
+              </ul>
+            </div>
+            <div class="mog-impact-serve">
+              <p class="mog-impact-heading">Who We Serve</p>
+              <p>Communities affected by natural disasters, displacement, or humanitarian crises in Nigeria.</p>
+            </div>
+          </div>
+          <button type="button" class="mog-support-btn">Support This Program</button>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ============ HOW IT WORKS ============ -->
+  <section class="mog-how reveal">
+    <p class="eyebrow">How It Works</p>
+    <h2>Community-led. Diaspora-backed.<em>Lasting impact.</em></h2>
+
+    <div class="mog-steps">
+      <div class="mog-step">
+        <div class="mog-step-icon">🧑‍🤝‍🧑</div>
+        <p class="mog-step-num">01</p>
+        <p class="mog-step-label">Community identifies need</p>
+      </div>
+      <div class="mog-step">
+        <div class="mog-step-icon">📋</div>
+        <p class="mog-step-num">02</p>
+        <p class="mog-step-label">Field team designs solution</p>
+      </div>
+      <div class="mog-step">
+        <div class="mog-step-icon">💚</div>
+        <p class="mog-step-num">03</p>
+        <p class="mog-step-label">Diaspora funds the work</p>
+      </div>
+      <div class="mog-step">
+        <div class="mog-step-icon">🔨</div>
+        <p class="mog-step-num">04</p>
+        <p class="mog-step-label">Local partners implement</p>
+      </div>
+      <div class="mog-step">
+        <div class="mog-step-icon">📊</div>
+        <p class="mog-step-num">05</p>
+        <p class="mog-step-label">We measure & report impact</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ CTA ============ -->
+  <section class="mog-cta reveal">
+    <h2>Ready to make a difference?</h2>
+    <p>Every dollar you give goes directly to the programs that matter most. See where your impact lands.</p>
+    <a href="#" class="mog-btn">Donate Now</a>
+  </section>
+
+</div>
+
+<script src="programs-page.js"></script>
+
+<!-- FOOTER -->
+<footer class="site-footer reveal" id="contact">
+  <div class="container footer-grid">
+    <div class="footer-brand">
+      <a href="index.html" class="logo">
+        <img src="assets/mog-logo.png" alt="Mount of Grace Foundation" class="logo-img">
+        <span class="logo-text light">
+          Mount of Grace
+          <small>FOUNDATION</small>
+        </span>
+      </a>
+      <p>Empowering communities in Nigeria and the diaspora through education, healthcare, and sustainable development.</p>
+      <div class="social-icons">
+        <a href="#" aria-label="Facebook">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+            <path d="M22 12c0-5.523-4.477-10-10-10S2 6.477 2 12c0 4.991 3.657 9.128 8.438 9.878v-6.987h-2.54V12h2.54V9.797c0-2.506 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.243 0-1.63.771-1.63 1.562V12h2.773l-.443 2.89h-2.33v6.988C18.343 21.128 22 16.991 22 12z"/>
+          </svg>
+        </a>
+        <a href="#" aria-label="Twitter">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+            <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/>
+          </svg>
+        </a>
+        <a href="#" aria-label="Instagram">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+            <path d="M12 2c2.717 0 3.056.01 4.122.06 1.065.05 1.79.217 2.428.465.66.256 1.216.6 1.772 1.153a4.908 4.908 0 011.153 1.772c.247.637.415 1.363.465 2.428.048 1.066.06 1.405.06 4.122 0 2.717-.01 3.056-.06 4.122-.05 1.065-.218 1.79-.465 2.428a4.883 4.883 0 01-1.153 1.772 4.915 4.915 0 01-1.772 1.153c-.637.247-1.363.415-2.428.465-1.066.048-1.405.06-4.122.06-2.717 0-3.056-.01-4.122-.06-1.065-.05-1.79-.218-2.428-.465a4.89 4.89 0 01-1.772-1.153 4.904 4.904 0 01-1.153-1.772c-.248-.637-.415-1.363-.465-2.428C2.013 15.056 2 14.717 2 12c0-2.717.01-3.056.06-4.122.05-1.066.217-1.79.465-2.428a4.88 4.88 0 011.153-1.772A4.897 4.897 0 015.45 2.525c.638-.248 1.362-.415 2.428-.465C8.944 2.013 9.283 2 12 2zm0 1.802c-2.67 0-2.986.01-4.04.059-.976.045-1.505.207-1.858.344-.466.181-.8.398-1.15.748-.35.35-.566.684-.747 1.15-.137.353-.3.882-.344 1.857-.05 1.055-.06 1.37-.06 4.04 0 2.67.01 2.986.06 4.04.045.976.207 1.505.344 1.858.181.466.398.8.748 1.15.35.35.683.566 1.15.747.352.137.881.3 1.857.344 1.054.05 1.37.06 4.04.06 2.67 0 2.987-.01 4.04-.06.976-.045 1.505-.207 1.858-.344.466-.181.8-.398 1.15-.748.35-.35.566-.683.747-1.15.137-.352.3-.881.344-1.857.05-1.054.06-1.37.06-4.04 0-2.67-.01-2.986-.06-4.04-.045-.976-.207-1.505-.344-1.858a3.09 3.09 0 00-.748-1.15 3.098 3.098 0 00-1.15-.747c-.352-.137-.881-.3-1.857-.344-1.054-.05-1.37-.06-4.04-.06zm0 4.594a5.604 5.604 0 110 11.208 5.604 5.604 0 010-11.208zM12 16a4 4 0 100-8 4 4 0 000 8zm5.838-9.406a1.31 1.31 0 11-2.62 0 1.31 1.31 0 012.62 0z"/>
+          </svg>
+        </a>
+        <a href="#" aria-label="TikTok">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+            <path d="M16.5 2h-3v13.5a2.5 2.5 0 11-2.5-2.5c.17 0 .33.02.5.05V9.98a5.5 5.5 0 105 5.47V8.5a6.47 6.47 0 004 1.5V6.9a3.5 3.5 0 01-4-1.9z"/>
+          </svg>
+        </a>
+      </div>
+    </div>
+
+    <div class="footer-col">
+      <h4>Organization</h4>
+      <a href="about.html">About Us</a>
+      <a href="programs.html">Our Programs</a>
+      <a href="impact.html">Our Impact</a>
+      <a href="involved.html">Get Involved</a>
+      <a href="contact.html">Contact</a>
+    </div>
+
+    <div class="footer-col">
+      <h4>Programs</h4>
+      <a href="#">Education &amp; Youth</a>
+      <a href="#">Healthcare Access</a>
+      <a href="#">Women's Empowerment</a>
+      <a href="#">Community Development</a>
+      <a href="#">Diaspora Giving</a>
+    </div>
+
+    <div class="footer-col">
+      <h4>Contact</h4>
+      <p>Lagos, Nigeria<br>New York, USA</p>
+      <p>info@mountofgrace.org<br>+1 (212) 555-0192</p>
+    </div>
+  </div>
+
+  <div class="container footer-bottom">
+    <span>© 2024 Mount of Grace Foundation. All rights reserved.</span>
+    <div class="footer-legal">
+      <a href="#">Privacy Policy</a>
+      <a href="#">Terms of Use</a>
+      <a href="#">Designed by Devdrey</a>
+    </div>
+  </div>
+</footer>
+<script src="script.js"></script>
+
+</body>
+</html>

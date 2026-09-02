@@ -61,3 +61,36 @@ const videoObserver = new IntersectionObserver((entries) => {
 }, { threshold: 0.5 });
 
 videoEls.forEach(video => videoObserver.observe(video));
+
+function mogToggleImpact(panelId, btnEl) {
+  var panel = document.getElementById(panelId);
+  if (!panel) return;
+
+  var wrap = btnEl.closest('.mog-card-wrap');
+  var isOpen = !panel.hasAttribute('hidden');
+
+  // Close every other open panel first
+  document.querySelectorAll('.mog-impact-panel').forEach(function (otherPanel) {
+    if (otherPanel === panel) return;
+    if (!otherPanel.hasAttribute('hidden')) {
+      otherPanel.setAttribute('hidden', '');
+      var otherWrap = otherPanel.closest('.mog-card-wrap');
+      if (otherWrap) {
+        otherWrap.classList.remove('is-open');
+        var otherBtn = otherWrap.querySelector('.mog-see-impact');
+        if (otherBtn) otherBtn.textContent = 'See impact ↓';
+      }
+    }
+  });
+
+  // Then toggle the clicked one
+  if (isOpen) {
+    panel.setAttribute('hidden', '');
+    btnEl.textContent = 'See impact ↓';
+    if (wrap) wrap.classList.remove('is-open');
+  } else {
+    panel.removeAttribute('hidden');
+    btnEl.textContent = 'Hide details ↑';
+    if (wrap) wrap.classList.add('is-open');
+  }
+}
