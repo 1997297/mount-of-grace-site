@@ -5,9 +5,6 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Mount of Grace Foundation</title>
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,400;0,9..144,500;0,9..144,600;0,9..144,700;1,9..144,300;1,9..144,400;1,9..144,500;1,9..144,600&family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="styles.css">
 </head>
 <body>
@@ -55,8 +52,8 @@
       Mount of Grace Foundation bridges Nigerian communities with the resources, care, and opportunity they deserve — driven by diaspora compassion and grounded in service.
     </p>
     <div class="hero-actions">
-      <a href="#donate" class="btn btn-primary">Donate Now</a>
-      <a href="#programs" class="btn btn-outline-light">See Our Work</a>
+      <a href="donate.html" class="btn btn-primary">Donate Now</a>
+      <a href="programs.html" class="btn btn-outline-light">See Our Work</a>
     </div>
   </div>
 </section>
@@ -122,56 +119,76 @@
     </div>
 
     <div class="programs-grid">
-      <div class="program-card">
-        <div class="program-img" style="background-image:url('assets/EDU&YUT.png')"></div>
-        <div class="program-body">
-          <span class="program-icon">📖</span>
-          <h3>Education &amp; Youth</h3>
-          <p>Scholarships, school supplies, and mentorship for students across underserved communities in Nigeria.</p>
-          <a href="#" class="text-link">Learn more</a>
-        </div>
+  <div class="program-card-wrap">
+    <div class="program-card">
+      <div class="program-img" style="background-image:url('assets/EDU&YUT.png')"></div>
+      <div class="program-body">
+        <span class="program-icon">📖</span>
+        <h3>Education &amp; Youth</h3>
+        <p>Scholarships, school supplies, and mentorship for students across underserved communities in Nigeria.</p>
+        <button type="button" class="home-program-toggle" onclick="toggleHomeProgram(this)">Learn more <span class="chevron">↓</span></button>
       </div>
+    </div>
+    <div class="home-program-dropdown">
+      <p>We currently support 2,400+ students across 18 partner schools with tuition, books, uniforms, and one-on-one mentorship from local professionals — following each child from primary school through graduation.</p>
+    </div>
+  </div>
 
-      <div class="program-card">
-        <div class="program-img" style="background-image:url('assets/HEALTH.png')"></div>
-        <div class="program-body">
-          <span class="program-icon">🏥</span>
-          <h3>Healthcare Access</h3>
-          <p>Free medical camps, maternal health support, and essential medicines reaching rural communities.</p>
-          <a href="#" class="text-link">Learn more</a>
-        </div>
+  <div class="program-card-wrap">
+    <div class="program-card">
+      <div class="program-img" style="background-image:url('assets/HEALTH.png')"></div>
+      <div class="program-body">
+        <span class="program-icon">🏥</span>
+        <h3>Healthcare Access</h3>
+        <p>Free medical camps, maternal health support, and essential medicines reaching rural communities.</p>
+        <button type="button" class="home-program-toggle" onclick="toggleHomeProgram(this)">Learn more <span class="chevron">↓</span></button>
       </div>
+    </div>
+    <div class="home-program-dropdown">
+      <p>Quarterly free medical camps bring doctors, nurses, and medicine directly to rural villages — with a focus on maternal health, malaria treatment, and chronic condition management for families who'd otherwise go without care.</p>
+    </div>
+  </div>
 
-      <div class="program-card">
-        <div class="program-img" style="background-image:url('assets/EMPOW.PNG')"></div>
-        <div class="program-body">
-          <span class="program-icon">🌾</span>
-          <h3>Women's Empowerment</h3>
-          <p>Vocational training, microfinance, and leadership programs helping women build sustainable livelihoods.</p>
-          <a href="#" class="text-link">Learn more</a>
-        </div>
+  <div class="program-card-wrap">
+    <div class="program-card">
+      <div class="program-img" style="background-image:url('assets/EMPOW.PNG')"></div>
+      <div class="program-body">
+        <span class="program-icon">🌾</span>
+        <h3>Women's Empowerment</h3>
+        <p>Vocational training, microfinance, and leadership programs helping women build sustainable livelihoods.</p>
+        <button type="button" class="home-program-toggle" onclick="toggleHomeProgram(this)">Learn more <span class="chevron">↓</span></button>
       </div>
+    </div>
+    <div class="home-program-dropdown">
+      <p>A 12-week vocational program in tailoring, food processing, and trade skills, paired with microloans and savings cooperatives — helping women build businesses that outlast the program itself.</p>
+    </div>
+  </div>
 
+  <div class="program-card-wrap">
     <div class="program-card video-card">
       <div class="program-video">
         <video class="program-video-el" muted loop playsinline poster="assets/thumbnail.png">
-        <source src="assets/MOG-VID.mp4" type="video/mp4">
-        Your browser does not support the video tag.
-      </video>
-      <button class="play-btn" aria-label="Play video">▶</button>
+          <source src="assets/MOG-VID.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+        <button class="play-btn" aria-label="Play video">▶</button>
+      </div>
+      <div class="program-body">
+        <span class="program-icon">🏠</span>
+        <h3>Shelter &amp; Housing</h3>
+        <p>Providing safe, temporary shelter and transitional housing for the homeless — working alongside community volunteers to restore safety, warmth, and dignity to those with nowhere to turn.</p>
+        <button type="button" class="home-program-toggle" onclick="toggleHomeProgram(this)">Learn more <span class="chevron">↓</span></button>
+      </div>
     </div>
-
-    <div class="program-body">
-      <span class="program-icon">🏠</span>
-      <h3>Shelter &amp; Housing</h3>
-      <p>Providing safe, temporary shelter and transitional housing for the homeless — working alongside community volunteers to restore safety, warmth, and dignity to those with nowhere to turn.</p>
-      <a href="#" class="text-link">Learn more</a>
+    <div class="home-program-dropdown">
+      <p>Working with local volunteers, we provide emergency shelter, transitional housing, and a path back to stability — pairing a safe place to sleep with the support needed to get back on your feet.</p>
     </div>
   </div>
+</div>
 
   </div>
     <div class="view-all-wrap">
-      <a href="#" class="btn btn-outline">View All Programs</a>
+      <a href="programs.html" class="btn btn-outline">View All Programs</a>
     </div>
   </div>
 </section>
@@ -243,8 +260,8 @@
     </h2>
     <p>Whether you give, volunteer, or spread the word — every act of solidarity moves us closer to a world where every Nigerian community can thrive.</p>
     <div class="cta-actions">
-      <a href="#donate" class="btn btn-primary">Donate Today</a>
-      <a href="#" class="btn btn-outline">Volunteer with Us</a>
+      <a href="donate.html" class="btn btn-primary">Donate Today</a>
+      <a href="involved.html" class="btn btn-outline">Volunteer with Us</a>
     </div>
   </div>
 </section>

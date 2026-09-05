@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<link rel="icon" type="image/png" href="assets/favicon.png">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Sponsor a Project — Mount of Grace Foundation</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<!-- HEADER -->
+<header class="site-header">
+  <div class="container header-inner">
+    <a href="index.html" class="logo">
+      <img src="assets/mog-logo.png" alt="Mount of Grace Foundation" class="logo-img">
+      <span class="logo-text">
+        Mount of Grace
+        <small>FOUNDATION</small>
+      </span>
+    </a>
+    <nav class="main-nav" id="mainNav">
+      <a href="index.html" class="nav-link">Home</a>
+      <a href="about.html" class="nav-link">About</a>
+      <a href="programs.html" class="nav-link">Programs</a>
+      <a href="impact.html" class="nav-link">Impact</a>
+      <a href="involved.html" class="nav-link active">Get Involved</a>
+      <a href="contact.html" class="nav-link">Contact</a>
+      <a href="donate.html" class="btn btn-primary btn-sm mobile-donate">Donate</a>
+    </nav>
+    <a href="donate.html" class="btn btn-primary btn-sm desktop-donate">Donate</a>
+    <button class="hamburger" id="hamburgerBtn" aria-label="Toggle navigation menu">
+      <span class="hamburger-line"></span>
+      <span class="hamburger-line"></span>
+      <span class="hamburger-line"></span>
+    </button>
+  </div>
+</header>
+
+<!-- HERO -->
+<section class="involved-hero">
+  <div class="involved-hero-bg" style="background: linear-gradient(180deg, rgba(14, 42, 30, 0.82), rgba(14, 42, 30, 0.88)), url('assets/hero-bg.png') center/cover no-repeat;"></div>
+  <div class="involved-hero-content reveal">
+    <span class="eyebrow eyebrow-light">SPONSOR A PROJECT</span>
+    <h1 class="involved-hero-title">
+      Fund a project.<br>
+      <em>Own its story.</em>
+    </h1>
+    <p class="involved-hero-subtitle">
+      Sponsorships fund a named initiative from start to finish — with full financial reporting, site visit invitations, and public recognition of your organization or family's contribution.
+    </p>
+  </div>
+</section>
+
+<!-- TIERS -->
+<section class="involved-donate reveal">
+  <div class="container">
+    <div class="section-head">
+      <span class="eyebrow">SPONSORSHIP TIERS</span>
+      <h2 class="section-title">Choose what to fund</h2>
+    </div>
+
+    <div class="involved-volunteer-grid">
+      <div class="involved-volunteer-card">
+        <span class="involved-volunteer-icon">💧</span>
+        <h3>Borehole Installation</h3>
+        <p>Reaches ~500 people with clean water access.</p>
+        <p style="margin-top:12px; font-weight:700; color:var(--green-700);">$5,000–$8,000</p>
+      </div>
+      <div class="involved-volunteer-card">
+        <span class="involved-volunteer-icon">🏫</span>
+        <h3>Classroom Block</h3>
+        <p>Reaches ~120 students with a permanent learning space.</p>
+        <p style="margin-top:12px; font-weight:700; color:var(--green-700);">$12,000–$18,000</p>
+      </div>
+      <div class="involved-volunteer-card">
+        <span class="involved-volunteer-icon">🏥</span>
+        <h3>Medical Camp</h3>
+        <p>Reaches ~350 patients with free, full-day medical care.</p>
+        <p style="margin-top:12px; font-weight:700; color:var(--green-700);">$8,000–$15,000</p>
+      </div>
+      <div class="involved-volunteer-card">
+        <span class="involved-volunteer-icon">🎓</span>
+        <h3>Scholarship Cohort</h3>
+        <p>Funds a full year of school for 10 students.</p>
+        <p style="margin-top:12px; font-weight:700; color:var(--green-700);">$10,000/year</p>
+      </div>
+    </div>
+
+    <!-- INQUIRY FORM -->
+    <div class="involved-form-card reveal" style="margin: 20px auto 0;">
+      <div id="sponsorFormWrap">
+        <h3>Tell us about your sponsorship interest</h3>
+        <form id="sponsorForm">
+          <div class="involved-form-row">
+            <div class="involved-form-group">
+              <label for="orgName">Organization / Name</label>
+              <input type="text" id="orgName" name="orgName" placeholder="Your name or organization" required>
+            </div>
+            <div class="involved-form-group">
+              <label for="sponsorEmail">Email Address</label>
+              <input type="email" id="sponsorEmail" name="sponsorEmail" placeholder="you@example.com" required>
+            </div>
+          </div>
+
+          <div class="involved-form-group involved-form-full">
+            <label for="sponsorProject">Which project interests you?</label>
+            <select id="sponsorProject" name="sponsorProject">
+              <option value="" selected>Select one...</option>
+              <option value="borehole">Borehole Installation</option>
+              <option value="classroom">Classroom Block</option>
+              <option value="medical">Medical Camp</option>
+              <option value="scholarship">Scholarship Cohort</option>
+              <option value="other">Something else / not sure yet</option>
+            </select>
+          </div>
+
+          <div class="involved-form-group involved-form-full">
+            <label for="sponsorMessage">Anything else we should know?</label>
+            <textarea id="sponsorMessage" name="sponsorMessage" placeholder="Budget range, timeline, region of interest..."></textarea>
+          </div>
+
+          <button type="submit" class="btn btn-primary">Submit Inquiry</button>
+        </form>
+      </div>
+
+      <div class="involved-thankyou" id="sponsorThankYou" hidden>
+        <span class="involved-thankyou-icon">🍃</span>
+        <h3>Thank you!</h3>
+        <p>Our partnerships team will reach out within 3 business days to discuss your sponsorship.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="site-footer reveal" id="contact">
+  <div class="container footer-grid">
+    <div class="footer-brand">
+      <a href="index.html" class="logo">
+        <img src="assets/mog-logo.png" alt="Mount of Grace Foundation" class="logo-img">
+        <span class="logo-text light">
+          Mount of Grace
+          <small>FOUNDATION</small>
+        </span>
+      </a>
+      <p>Empowering communities in Nigeria and the diaspora through education, healthcare, and sustainable development.</p>
+    </div>
+    <div class="footer-col">
+      <h4>Organization</h4>
+      <a href="about.html">About Us</a>
+      <a href="programs.html">Our Programs</a>
+      <a href="impact.html">Our Impact</a>
+      <a href="involved.html">Get Involved</a>
+      <a href="contact.html">Contact</a>
+    </div>
+    <div class="footer-col">
+      <h4>Programs</h4>
+      <a href="#">Education &amp; Youth</a>
+      <a href="#">Healthcare Access</a>
+      <a href="#">Women's Empowerment</a>
+      <a href="#">Community Development</a>
+      <a href="#">Diaspora Giving</a>
+    </div>
+    <div class="footer-col">
+      <h4>Contact</h4>
+      <p>Lagos, Nigeria<br>New York, USA</p>
+      <p>info@mountofgrace.org<br>+1 (212) 555-0192</p>
+    </div>
+  </div>
+  <div class="container footer-bottom">
+    <span>© 2024 Mount of Grace Foundation. All rights reserved.</span>
+    <div class="footer-legal">
+      <a href="#">Privacy Policy</a>
+      <a href="#">Terms of Use</a>
+      <a href="#">Designed by Devdrey</a>
+    </div>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+<script>
+  const sponsorForm = document.getElementById('sponsorForm');
+  if (sponsorForm) {
+    sponsorForm.addEventListener('submit', (e) => {
+      e.preventDefault();
+      document.getElementById('sponsorFormWrap').hidden = true;
+      document.getElementById('sponsorThankYou').hidden = false;
+    });
+  }
+</script>
+
+</body>
+</html>
