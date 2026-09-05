@@ -230,8 +230,8 @@ h1, h2, h3 { font-family: var(--font-display); color: var(--text-dark); font-wei
 .logo-text.light { color: var(--white); }
 .logo-text small {
   font-family: outfit;
-  font-size: 10px;
-  font-weight: 600;
+  font-size: 12px;
+  font-weight: 500;
   letter-spacing: 0.14em;
   color: #57b98b;
 }
