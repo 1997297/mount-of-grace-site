@@ -1,0 +1,36 @@
+{
+  "metrics": {
+    "peopleReached": {
+      "value": 1384,
+      "label": "People reached"
+    },
+    "householdsSupported": {
+      "value": 180,
+      "label": "Households supported"
+    },
+    "medicalParticipants": {
+      "value": 240,
+      "label": "Medical outreach participants"
+    },
+    "educationParticipants": {
+      "value": 263,
+      "label": "Young people supported"
+    },
+    "mobilitySupport": {
+      "value": 89,
+      "label": "People receiving mobility support"
+    },
+    "outreachActivities": {
+      "value": 36,
+      "label": "Outreach activities"
+    },
+    "years": {
+      "value": 7,
+      "label": "Years of service"
+    },
+    "countries": {
+      "value": 2,
+      "label": "Countries: Nigeria and the United States"
+    }
+  }
+}
