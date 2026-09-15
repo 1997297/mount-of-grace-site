@@ -107,7 +107,7 @@ ${help}
 <section class="cta-band reveal">
   <div class="cta-inner">
     <span class="eyebrow">GET INVOLVED</span>
-    <h2 class="section-title">Someone's story can change <em>because you chose to help.</em></h2>
+    <h2 class="section-title cta-story-title"><span>Someone's story can change</span> <em>because you chose to help.</em></h2>
     <p>${ctaCopy}</p>
     <div class="cta-actions">
       <a href="donate.html" class="btn btn-primary">Donate</a>
@@ -196,10 +196,10 @@ ${steps.map(([name, text], i) => `      <div class="mog-step">
     </div>
   </section>`);
   src = replaceSection(src, 'mog-cta reveal', `<section class="mog-cta reveal">
-    <h2>Someone's story can change because you chose to help.</h2>
+    <h2 class="cta-story-title"><span>Someone's story can change</span> <em>because you chose to help.</em></h2>
     <p>${ctaCopy}</p>
     <div class="cta-actions">
-      <a href="donate.html" class="mog-btn">Donate</a>
+      <a href="donate.html" class="btn btn-primary">Donate</a>
       <a href="involved.html" class="btn btn-outline">Get Involved</a>
     </div>
   </section>`);

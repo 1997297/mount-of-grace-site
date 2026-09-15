@@ -1,6 +1,6 @@
 # Mount of Grace website revision
 
-Completed 14 September 2026, including the owner's final corrections.
+Revised through 15 September 2026, including the owner's confirmed details and final CTA adjustments.
 
 ## Content and structure
 
@@ -38,7 +38,7 @@ Updated shared scripts: `script.js` for deferred gallery media, viewer recovery/
 
 Updated supporting files: `.build/content.js`, `.build/build-stubs.js`, `.build/shared.js`, `.build/build-pages.js`, `.build/test-forms.js`. Added `.build/impact-data.json`, `.build/update-impact.js`, `.build/verify-revisions.js`, `.build/browser-check.js` and this note. Current programme generation no longer restores outdated legal or credits content.
 
-`styles.css` is byte-for-byte unchanged. Historical `.build/backup` files are retained for reference and are not the current content source.
+The existing CSS is preserved, with a scoped addition for compact, side-by-side CTA buttons and two-line CTA headings. Historical `.build/backup` files are retained for reference and are not the current content source.
 
 ## Verification
 
@@ -50,10 +50,16 @@ Updated supporting files: `.build/content.js`, `.build/build-stubs.js`, `.build/
 
 To repeat the browser check, start `node .build/server.js 8766`, then run `node .build/browser-check.js`. It uses Chrome and writes screenshots to a temporary folder. The older `.build/test-forms.js` and `.build/test-error-path.js` utilities still target live services; they were not run during this revision.
 
-## Details needing owner confirmation
+## Confirmed corrections applied on 15 September 2026
 
-- **US account mismatch:** the displayed account is `4830 2917 6054` (`483029176054`), but the Copy button contains `4830291760554`. Both existing values were preserved. Confirm the correct number before relying on the copy action.
-- **Founder identity:** current About content names Mrs Dunni Falana; the previous biography and historical backup named Dr Adaeze Okonkwo. The conflicting biographical story was removed; existing roster names, roles and portraits were preserved for confirmation.
-- Existing street addresses, emails, team details and EIN/RC references were preserved where no reliable correction was supplied. Inherited operational privacy claims, including retention and safeguarding arrangements, still require organisational confirmation.
-- The restored Contact social links retain their original `#` destinations. The original Google Maps URL was restored as supplied; its external map destination was not verified. These were preserved at the owner's explicit request.
-- Supply `assets/v19.mp4` to complete the video library. Its slot currently provides an unavailable-video message when opened.
+- The visible and copied US bank account number is now `4830291760554`.
+- The founder name and portrait alt text now read **Mrs. Dunni Falano**. Her card has a general paragraph about leadership, compassion and service, without invented biographical details. The other team cards remain unchanged.
+- Contact and the existing footer contact columns now use **0813 209 7971**, **0806 913 5196** and **0703 118 1996**, with international-format telephone links.
+- Privacy wording is general and no longer claims fixed retention schedules, formal safeguarding or other unconfirmed internal systems. Related unsupported procedural claims in Terms were removed. Existing registration details remain unchanged and are confirmed by the owner.
+- The homepage Outreach in action card now uses `assets/V1.mp4`, already in the gallery.
+- Paired hero and final CTA buttons now use compact sizing and remain side by side, including on phones. The nine occurrences of the ?Someone's story can change? heading use a separate, smaller second line, ?because you chose to help.?
+- Social placeholders, the restored Google Maps destination and the existing gallery/video implementation remain as directed by the owner. The owner is handling the missing video file manually.
+
+Files changed in this follow-up: `accounts.html`, `about.html`, `contact.html`, `index.html`, `privacy-policy.html`, `terms-of-us.html`, the remaining pages with shared footer phone details, `styles.css`, `.build/shared.js`, `.build/build-stubs.js` and this note.
+
+Static comparison confirms the other team cards, registration references, social block, Google Maps link, gallery media structure and shared interaction scripts remain unchanged. The existing stylesheet is unchanged before the new CTA rules.
