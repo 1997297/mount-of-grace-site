@@ -1643,7 +1643,7 @@ a:focus-visible, button:focus-visible {
   inset: 0;
   background:
     linear-gradient(180deg, rgba(14, 42, 30, 0.85), rgba(14, 42, 30, 0.9)),
-    url('https://images.unsplash.com/photo-1509062522246-3755977927d7?q=80&w=1600&auto=format&fit=crop') center/cover no-repeat;
+    url("assets/impact-hero-bg.webp") center/cover no-repeat;
 }
 
 .impact-hero-content {
